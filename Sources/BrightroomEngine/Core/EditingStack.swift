@@ -29,6 +29,8 @@ public enum EditingStackError: Error, Sendable {
   case unableToCreateRendererInLoading
 }
 
+extension EditingStack: ObservableObject {}
+
 /// A stateful object that manages current editing status from original image.
 /// And supports rendering a result image.
 ///
